@@ -1,0 +1,226 @@
+.bordering {
+        top: 18px;
+        left: 18px;
+        // width: 1670px;
+        height: 72px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border-radius: 70px;
+        opacity: 1;
+        margin-top: 20px;
+}
+
+.test-logo {
+        top: 30px;
+        left: 50px;
+        width: 211px;
+        height: 48px;
+        opacity: 1;
+}
+
+.container-spacing {
+        display: flex;
+        gap: 30px;
+        margin-left: -2%;
+        // margin-top:8px;
+}
+
+.item-styles {
+        top: 45px;
+        left: 498px;
+        width: 63px;
+        height: 19px;
+        text-align: left;
+        font: normal normal bold 14px/19px Manrope;
+        letter-spacing: 0px;
+        color: #072635;
+}
+
+.body-styles {
+        background-color: #F6F7F8;
+}
+
+.image-styles {
+        padding-right: 5px;
+        padding-bottom: 5px;
+}
+
+.menu-styles {
+        display: flex;
+        gap: 5px;
+        text-align: left;
+        font: normal normal bold 14px/19px Manrope;
+        letter-spacing: 0px;
+        color: #072635;
+        opacity: 1;
+        //padding-top: 10px;
+}
+
+.active {
+        background: #01F0D0 0% 0% no-repeat padding-box;
+        border-radius: 41px;
+        opacity: 1;
+        // padding-left: 10px;
+        // padding-right: 10px;
+        // padding-top: 7px;
+}
+
+// .container-fluid {
+//         justify-content: space-evenly !important;
+// }
+
+.text-styles {
+        top: 35px;
+        left: 1361px;
+        width: 119px;
+        height: 19px;
+        text-align: left;
+        font: normal normal bold 14px/19px Manrope;
+        letter-spacing: 0px;
+        color: #072635;
+        opacity: 1;
+}
+
+.normal-styles {
+        top: 54px;
+        left: 1361px;
+        width: 129px;
+        height: 19px;
+        text-align: left;
+        font: normal normal normal 14px/19px Manrope;
+        letter-spacing: 0px;
+        color: #707070;
+        opacity: 1;
+}
+
+.person-styles {
+        top: 32px;
+        left: 1309px;
+        width: 44px;
+        height: 44px;
+        opacity: 1;
+}
+
+.settings-styles {
+        top: 44px;
+        left: 1515px;
+        width: 19px;
+        height: 20px;
+        /* UI Properties */
+        opacity: 1;
+}
+
+.option-styles {
+        top: 45px;
+        left: 1546px;
+        width: 4px;
+        height: 18px;
+        opacity: 1;
+}
+
+.menubar-settings {
+        top: 122px;
+        left: 18px;
+        width: 367px;
+        height: 1054px;
+        /* UI Properties */
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border-radius: 16px;
+        opacity: 1;
+
+}
+
+
+.dashboard-container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+}
+
+.mat-toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.logo {
+        font-size: 24px;
+        font-weight: bold;
+}
+
+.spacer {
+        flex: 1 1 auto;
+}
+
+.doctor-info {
+        display: flex;
+        align-items: center;
+}
+
+// .doctor-info img {
+//         border-radius: 50%;
+//         width: 40px;
+//         height: 40px;
+//         margin-right: 8px;
+// }
+
+.content {
+        display: flex;
+        flex: 1;
+        overflow-y: scroll;
+}
+
+// .sidebar {
+//         //width: 300px;
+//         background: #ffffff;
+//         padding-top: 10px;
+//         margin-top: 23px;
+//         padding-left: 16px;
+//         padding-right: 16px;
+//         padding-bottom: 10px;
+//         //overflow-y: auto;
+// }
+
+.main-content {
+        flex: 1;
+        padding: 20px;
+        //overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+        width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+        background-color: #000000;
+        border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+        background-color: #000000;
+}
+
+.dashboard-container {
+        background-color: #f4f4f4;
+}
+
+.history-styles {
+        top: 122px;
+        left: 417px;
+        width: 766px;
+        height: 673px;
+        /* UI Properties */
+
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border-radius: 16px;
+        opacity: 1;
+}
+
+.result-styles {
+        top: 827px;
+        left: 417px;
+        width: 766px;
+        height: 349px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border-radius: 16px;
+        opacity: 1;
+}

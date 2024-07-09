@@ -1,0 +1,24 @@
+<div class="patients-list">
+        <div class="patients-flexing">
+                <span class="textstyles">Patients</span>
+                <span><img class="search-iconstyles" src="../assets/search_icon.svg"></span>
+        </div>
+        <div class="list-styling">
+                <mat-list>
+                        <mat-list-item *ngFor="let patient of patients" [ngClass]="{'highlight': patient.name === 'Jessica Taylor'}">
+                                <div class="lists-images">
+                                        <div style="display: flex; gap:20px;">
+                                                <div><img class="patient-icon" matListAvatar [src]="patient.src"
+                                                                [alt]="patient.alt"></div>
+                                                <div>
+                                                        <h4 matLine class="patients-name">{{ patient.name }}</h4>
+                                                        <div class="gender" matLine>{{ patient.gender }}, {{ patient.age
+                                                                }}</div>
+                                                </div>
+                                        </div>
+                                        <div><img src="../assets/trio (1).png"></div>
+                                </div>
+                        </mat-list-item>
+                </mat-list>
+        </div>
+</div>
