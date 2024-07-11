@@ -1,41 +1,41 @@
 <mat-card class="patient-card">
 
-        <img class="portfolio" src="../assets/Layer 2.png" alt="Jessica Taylor">
-        <mat-card-title class="title-style">Jessica Taylor</mat-card-title>
+        <img class="portfolio" [src]="this.patientDetails?.profile_picture" alt="Jessica Taylor">
+        <mat-card-title class="title-style">{{this.patientDetails?.name}}</mat-card-title>
         <mat-card-content>
                 <div style="display: flex;margin-bottom:20px;">
                         <img class="birthicon" src="../assets/BirthIcon.png">
                         <div>
                                 <div class="dob">Date of Birth</div>
-                                <div class="tob">August 23,1996</div>
+                                <div class="tob">{{this.patientDetails?.date_of_birth}}</div>
                         </div>
                 </div>
                 <div style="display: flex;margin-bottom:20px;">
                         <img class="birthicon" src="../assets/FemaleIcon.png">
                         <div>
                                 <div class="dob">Gender</div>
-                                <div class="tob">Female</div>
+                                <div class="tob">{{this.patientDetails?.gender}}</div>
                         </div>
                 </div>
                 <div style="display: flex;margin-bottom:20px;">
                         <img class="birthicon" src="../assets/PhoneIcon.png">
                         <div>
                                 <div class="dob">Contact Info</div>
-                                <div class="tob">(415) 555-1234</div>
+                                <div class="tob">{{this.patientDetails?.phone_number}}</div>
                         </div>
                 </div>
                 <div style="display: flex;margin-bottom:20px;">
                         <img class="birthicon" src="../assets/PhoneIcon.png">
                         <div>
                                 <div class="dob">Emergency Contacts</div>
-                                <div class="tob">(415) 555-5678</div>
+                                <div class="tob">{{this.patientDetails?.emergency_contact}}</div>
                         </div>
                 </div>
                 <div style="display: flex;margin-bottom:20px;">
                         <img class="birthicon" src="../assets/InsuranceIcon.png">
                         <div>
                                 <div class="dob">Insurance Provider</div>
-                                <div class="tob">Sunrise Health Assurance</div>
+                                <div class="tob">{{this.patientDetails?.insurance_type}}</div>
                         </div>
                 </div>
               

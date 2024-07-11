@@ -1,7 +1,7 @@
 .bordering {
         top: 18px;
         left: 18px;
-        // width: 1670px;
+
         height: 72px;
         background: #ffffff 0% 0% no-repeat padding-box;
         border-radius: 70px;
@@ -21,7 +21,7 @@
         display: flex;
         gap: 30px;
         margin-left: -2%;
-        // margin-top:8px;
+
 }
 
 .item-styles {
@@ -52,21 +52,17 @@
         letter-spacing: 0px;
         color: #072635;
         opacity: 1;
-        //padding-top: 10px;
+
 }
 
 .active {
         background: #01F0D0 0% 0% no-repeat padding-box;
         border-radius: 41px;
         opacity: 1;
-        // padding-left: 10px;
-        // padding-right: 10px;
-        // padding-top: 7px;
+
 }
 
-// .container-fluid {
-//         justify-content: space-evenly !important;
-// }
+
 
 .text-styles {
         top: 35px;
@@ -156,12 +152,7 @@
         align-items: center;
 }
 
-// .doctor-info img {
-//         border-radius: 50%;
-//         width: 40px;
-//         height: 40px;
-//         margin-right: 8px;
-// }
+
 
 .content {
         display: flex;
@@ -169,21 +160,11 @@
         overflow-y: scroll;
 }
 
-// .sidebar {
-//         //width: 300px;
-//         background: #ffffff;
-//         padding-top: 10px;
-//         margin-top: 23px;
-//         padding-left: 16px;
-//         padding-right: 16px;
-//         padding-bottom: 10px;
-//         //overflow-y: auto;
-// }
+
 
 .main-content {
         flex: 1;
         padding: 20px;
-        //overflow-y: auto;
 }
 
 ::-webkit-scrollbar {

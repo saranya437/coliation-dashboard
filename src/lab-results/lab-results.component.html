@@ -1,9 +1,9 @@
 <div class="lab-results">
         <h3>Lab Results</h3>
         <mat-list>
-                <mat-list-item *ngFor="let test of tests">
+                <mat-list-item *ngFor="let test of labResults">
                         <div style="display: flex;justify-content: space-between;">
-                                <h4 matLine class="blood-tests">{{test.testName }}</h4>
+                                <h4 matLine class="blood-tests">{{test }}</h4>
                                 <div><img src="../assets/downloading.png"></div>
                         </div>
 

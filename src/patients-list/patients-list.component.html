@@ -5,10 +5,10 @@
         </div>
         <div class="list-styling">
                 <mat-list>
-                        <mat-list-item *ngFor="let patient of patients" [ngClass]="{'highlight': patient.name === 'Jessica Taylor'}">
+                        <mat-list-item *ngFor="let patient of patientsUsers" [ngClass]="{'highlight': patient.name === 'Jessica Taylor'}">
                                 <div class="lists-images">
                                         <div style="display: flex; gap:20px;">
-                                                <div><img class="patient-icon" matListAvatar [src]="patient.src"
+                                                <div><img class="patient-icon" matListAvatar [src]="patient.profile_picture"
                                                                 [alt]="patient.alt"></div>
                                                 <div>
                                                         <h4 matLine class="patients-name">{{ patient.name }}</h4>

@@ -1,61 +1,70 @@
 <div class="diagnosis-history">
         <div class="diagnostic-history">
-                <h3>Diagnosis History</h3>
+            <h3>Diagnosis History</h3>
         </div>
         <div class="chart-container">
-                <div style="display: flex;justify-content: space-between;width:65%;">
-                        <div class="diagramatic-history">
-                                <h4>Blood Pressure</h4>
-                        </div>
-                        <div class="last-months">Last 6 Months<span style="padding-left: 10px;"><img
-                                                src="../assets/dropdown-icon.svg"></span></div>
-
+            <div style="display: flex; justify-content: space-between; width: 65%;">
+                <div class="diagramatic-history">
+                    <h4>Blood Pressure</h4>
                 </div>
-                <div style="display:flex;">
-                        <canvas id="MyChart" style="padding-left: 10px !important; padding-bottom: 20px;"></canvas>
-                        <div class="legend">
-                                <div class="legend-item">
-                                        <div class="legend-color-box legend-systolic"> <span
-                                                        class="systolic">Systolic</span></div>
-
-                                        <div class="sixty">160</div>
-                                        <div>
-                                                <img class="arrow-img" src="../assets/ArrowUp.svg">
-                                                <span class="highsys">Higher than Average</span>
-                                        </div>
-                                </div>
-                                <hr width="208px">
-                                <div class="legend-item">
-                                        <div class="legend-color-box legend-diastolic"><span
-                                                        class="Diastolic">Diastolic</span></div>
-                                        <div class="sixty">78</div>
-                                        <div>
-                                                <img class="arrow-down" src="../assets/ArrowDown.svg">
-                                                <span class="highsys">Lower than Average</span>
-                                        </div>
-                                </div>
-                        </div>
-
+                <div class="last-months">
+                    Last 6 Months
+                    <span style="padding-left: 10px;">
+                        <img src="../assets/dropdown-icon.svg">
+                    </span>
                 </div>
+            </div>
+            <div style="display: flex;">
+                <canvas id="MyChart" style="padding-left: 10px !important; padding-bottom: 20px;"></canvas>
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color-box legend-systolic">
+                            <span class="systolic">Systolic</span>
+                        </div>
+                        <div class="sixty">{{ latestSystolic }}</div>
+                        <div>
+                            <img class="arrow-img" src="../assets/ArrowUp.svg" *ngIf="latestSystolic > 120">
+                            <img class="arrow-img" src="../assets/ArrowDown.svg" *ngIf="latestSystolic <= 120">
+                            <span class="highsys">
+                                {{ latestSystolic > 120 ? 'Higher than Average' : 'Normal' }}
+                            </span>
+                        </div>
+                    </div>
+                    <hr width="208px">
+                    <div class="legend-item">
+                        <div class="legend-color-box legend-diastolic">
+                            <span class="Diastolic">Diastolic</span>
+                        </div>
+                        <div class="sixty">{{ latestDiastolic }}</div>
+                        <div>
+                            <img class="arrow-img" src="../assets/ArrowUp.svg" *ngIf="latestDiastolic > 80">
+                            <img class="arrow-img" src="../assets/ArrowDown.svg" *ngIf="latestDiastolic <= 80">
+                            <span class="highsys">
+                                {{ latestDiastolic < 80 ? 'Lower than Average' : 'Normal' }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="heart-status">
-                <div class="status-one">
-                        <div><img class="respiratory" src="../assets/respiratory rate.svg"></div>
-                        <div class="status-styles">Respiratory Rate</div>
-                        <div class="bpm-styles">20 bpm</div>
-                        <div class="normal-styles">Normal</div>
-                </div>
-                <div class="status-two">
-                        <div><img class="respiratory" src="../assets/temperature.svg"></div>
-                        <div class="status-styles">Temperature</div>
-                        <div class="bpm-styles">98.6°F</div>
-                        <div class="normal-styles">Normal</div>
-                </div>
-                <div class="status-three">
-                        <div><img class="respiratory" src="../assets/HeartBPM.svg"></div>
-                        <div class="status-styles">Heart Rate</div>
-                        <div class="bpm-styles">78 bpm</div>
-                        <div class="normal-styles">Normal</div>
-                </div>
+            <div class="status-one">
+                <div><img class="respiratory" src="../assets/respiratory rate.svg"></div>
+                <div class="status-styles">Respiratory Rate</div>
+                <div class="bpm-styles">{{ latestRespiratoryRate }} bpm</div>
+                <div class="normal-styles">{{ latestRespiratoryRateStatus }}</div>
+            </div>
+            <div class="status-two">
+                <div><img class="respiratory" src="../assets/temperature.svg"></div>
+                <div class="status-styles">Temperature</div>
+                <div class="bpm-styles">{{ latestTemperature }}°F</div>
+                <div class="normal-styles">{{ latestTemperatureStatus }}</div>
+            </div>
+            <div class="status-three">
+                <div><img class="respiratory" src="../assets/HeartBPM.svg"></div>
+                <div class="status-styles">Heart Rate</div>
+                <div class="bpm-styles">{{ latestHeartRate }} bpm</div>
+                <div class="normal-styles">{{ latestHeartRateStatus }}</div>
+            </div>
         </div>
-</div>
+    </div>

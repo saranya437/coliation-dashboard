@@ -17,6 +17,7 @@ import { DiagnosticListComponent } from '../diagnostic-list/diagnostic-list.comp
 import { LabResultsComponent } from '../lab-results/lab-results.component';
 import { PatientDetailsComponent } from '../patient-details/patient-details.component';
 import { MatCardModule } from '@angular/material/card';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 
 @NgModule({
@@ -39,8 +40,11 @@ import { MatCardModule } from '@angular/material/card';
     MatTableModule,
     BrowserAnimationsModule,
     MatCardModule,
+
   ],
-  providers: [],
+  providers: [
+    provideHttpClient(withInterceptorsFromDi())
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
